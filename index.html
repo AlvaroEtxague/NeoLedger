@@ -9,23 +9,24 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Welcome to NeoLedger</title>
   </head>
   <body id="home">
     <header class="hero">
-      <div class="navbar" id="navbar">
+      <div class="navbar top" id="navbar">
         <h1 class="logo">
           <span class="text-primary"><i class="fas fa-book-open"></i>Neo</span>Ledger
         </h1>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#cases">Cases</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -96,20 +97,68 @@
         </header>
         <div class="row">
           <div class="column">
-            <img src="./images/cases01.jfif" alt="" />
-            <img src="./images/cases02.jfif" alt="" />
+            <a
+              href="./images/cases01.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases01.jfif" alt="" />
+            </a>
+            <a
+              href="./images/cases02.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases02.jfif" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases03.jfif" alt="" />
-            <img src="./images/cases04.jfif" alt="" />
+            <a
+              href="./images/cases03.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases03.jfif" alt="" />
+            </a>
+            <a
+              href="./images/cases04.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases04.jfif" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases05.jfif" alt="" />
-            <img src="./images/cases06.jfif" alt="" />
+            <a
+              href="./images/cases05.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases05.jfif" alt="" />
+            </a>
+            <a
+              href="./images/cases06.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases06.jfif" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases07.jfif" alt="" />
-            <img src="./images/cases08.jfif" alt="" />
+            <a
+              href="./images/cases07.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases07.jfif" alt=""
+            /></a>
+            <a
+              href="./images/cases08.jfif"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            >
+              <img src="./images/cases08.jfif" alt="" />
+            </a>
           </div>
         </div>
       </section>
@@ -130,7 +179,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, at hic dignissimos ad, ut nobis fugiat
                 doloribus in quos incidunt animi illo blanditiis non fugit.
               </p>
-              <a href="#" class="btn btn-outline"><i class="fas fa-chevron"></i> Read Our Blog</a>
+              <a href="blog.html" class="btn btn-outline"><i class="fas fa-chevron"></i> Read Our Blog</a>
             </div>
           </div>
         </div>
@@ -208,5 +257,9 @@
       </div>
       <p>Copyright 2020 - NeoLedge</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
