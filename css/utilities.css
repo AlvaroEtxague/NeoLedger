@@ -62,6 +62,13 @@
   padding: 20px;
 }
 
+.flex-items h4 {
+  font-size: 25px;
+}
+.flex-items p {
+  font-size: 18px;
+}
+
 /* flex columns */
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
@@ -143,4 +150,28 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+}
+
+@media (max-width: 769px) {
+  .section-header h2 {
+    margin: 10px 0;
+  }
+
+  .section-header h4 {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .flex-items h4 {
+    font-size: 20px;
+  }
+
+  .flex-items p {
+    font-size: 16px;
+  }
 }
